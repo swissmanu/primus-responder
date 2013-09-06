@@ -4,7 +4,7 @@
   "description": "Makes websockets capable of awaiting a response on a specific request.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "make build"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/swissmanu/primus-responder/issues"
+  },
+  "devDependencies": {
+    "browserbuild": "~0.7.0"
   }
 }
