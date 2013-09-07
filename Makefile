@@ -10,4 +10,12 @@ build:
 		--basepath lib/client/ `find lib/client -name '*.js'` \
 		> $(FILE)
 
-.PHONY: build
+lint:
+	@./node_modules/.bin/jshint \
+		lib/
+
+test: build
+	@./node_modules/.bin/mocha \
+		--reporter spec
+
+.PHONY: build lint test

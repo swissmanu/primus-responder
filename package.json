@@ -23,6 +23,14 @@
     "url": "https://github.com/swissmanu/primus-responder/issues"
   },
   "devDependencies": {
-    "browserbuild": "~0.7.0"
+    "browserbuild": "~0.7.0",
+    "should": "~1.2.2",
+    "primus": "~1.4.0",
+    "jshint": "~2.1.10",
+    "mocha": "~1.12.1",
+    "ws": "~0.4.30",
+    "debug": "~0.7.2",
+    "expect": "0.0.2",
+    "expect.js": "~0.2.0"
   }
 }
