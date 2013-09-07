@@ -6,6 +6,11 @@ Client and server plugin that adds a request/response cycle to (Primus)[https://
 
 	$ npm install primus-responder --save
 
+## Use cases
+
+* Wrap existing REST API into a realtime websocket connection
+* Simplify program flow if waiting on a specific response is needed
+
 ## Usage
 
 ### On the server
