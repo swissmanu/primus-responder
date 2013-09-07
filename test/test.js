@@ -42,7 +42,9 @@ describe('primus-responder', function() {
 	});
 
 	afterEach(function() {
-		httpServer.close();
+		if(httpServer.running) {
+			httpServer.close();
+		}
 	});
 
 
@@ -101,6 +103,40 @@ describe('primus-responder', function() {
 			});
 
 			clientFactory(httpServer, primus);
+		});
+
+		it('should trigger "request" event on incoming request envelope', function(done) {
+			httpServer.listen(function() {
+				var client = clientFactory(httpServer, primus);
+
+				client.on('request', function() {
+					done();
+				});
+
+				primus.on('connection', function(spark) {
+					spark.write(requestEnvelope);
+				});
+			});
+		});
+
+		it('should send response envelope with given data when request event handler executes "done()"', function(done) {
+			httpServer.listen(function() {
+				var client = clientFactory(httpServer, primus);
+
+				client.transform('outgoing', function(packet) {
+					var data = packet.data;
+					expect(data).to.be.eql(responseEnvelope);
+					done();
+				});
+
+				client.on('request', function(data, doneCallback) {
+					doneCallback(responseEnvelope.data);
+				});
+
+				primus.on('connection', function(spark) {
+					spark.write(requestEnvelope);
+				});
+			});
 		});
 	});
 
