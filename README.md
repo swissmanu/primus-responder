@@ -1,6 +1,6 @@
 # Primus Responder
 
-Client and server plugin that adds a request/response cycle to (Primus)[https://github.com/3rd-Eden/primus] if needed.
+Client and server plugin that adds a request/response cycle to [Primus](https://github.com/3rd-Eden/primus).
 
 ## Installation
 
