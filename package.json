@@ -1,11 +1,12 @@
 {
   "name": "primus-responder",
   "version": "0.0.1",
-  "description": "Makes websockets capable of awaiting a response on a specific request.",
+  "description": "Client and server plugin that adds a request/response cycle to Primus.",
   "main": "index.js",
   "scripts": {
     "build": "make build",
-    "postinstall": "make build"
+    "postinstall": "make build",
+    "test": "make test"
   },
   "repository": {
     "type": "git",
