@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "build": "make build",
-    "postinstall": "make build",
     "test": "make test"
   },
   "repository": {
