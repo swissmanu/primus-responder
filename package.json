@@ -1,6 +1,6 @@
 {
   "name": "primus-responder",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Client and server plugin that adds a request/response cycle to Primus.",
   "main": "index.js",
   "scripts": {

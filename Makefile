@@ -3,7 +3,7 @@ GLOBAL = 'var PrimusResponder'
 FILE = build/primus-responder.client.js
 
 build:
-	@-mkdir build
+	@[ -d build ] || mkdir build
 	@./node_modules/.bin/browserbuild \
 		--main $(MAIN) \
 		--global $(GLOBAL) \

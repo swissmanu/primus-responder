@@ -24,7 +24,17 @@ function clientFactory(httpServer, primus, port) {
 describe('primus-responder', function() {
 
 	var httpServer
-		, primus;
+		, primus
+		, requestEnvelope = {
+			plugin: 'primus-responder'
+			, requestId: 'test'
+			, data: 'test'
+		}
+		, responseEnvelope = {
+			plugin: 'primus-responder'
+			, responseId: 'test'
+			, data: 'test'
+		};
 
 	beforeEach(function() {
 		httpServer = http();
@@ -36,8 +46,49 @@ describe('primus-responder', function() {
 	});
 
 
-	describe('server', function() {
+	describe('server spark', function() {
+		it('should have a writeAndWait function', function(done) {
+			httpServer.listen(function() {
+				primus.on('connection', function(spark) {
+					expect(spark.writeAndWait).to.be.a('function');
+					done();
+				});
+			});
 
+			clientFactory(httpServer, primus);
+		});
+
+		it('should trigger "request" event on incoming request envelope', function(done) {
+			httpServer.listen(function() {
+				primus.on('connection', function(spark) {
+					spark.on('request', function() {
+						done();
+					});
+				});
+			});
+
+			var client = clientFactory(httpServer, primus);
+			client.write(requestEnvelope);
+		});
+
+		it('should send response envelope with given data when request event handler executes "done()"', function(done) {
+			httpServer.listen(function() {
+				primus.on('connection', function(spark) {
+					spark.on('request', function(data, doneCallback) {
+						doneCallback(responseEnvelope.data);
+					})
+				})
+
+				primus.transform('outgoing', function(packet) {
+					var data = packet.data;
+					expect(data).to.be.eql(responseEnvelope);
+					done();
+				});
+			});
+
+			var client = clientFactory(httpServer, primus);
+			client.write(requestEnvelope);
+		});
 	});
 
 	describe('client', function() {
