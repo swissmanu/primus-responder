@@ -2,6 +2,8 @@
 
 Client and server plugin that adds a request/response cycle to [Primus](https://github.com/3rd-Eden/primus).
 
+[![Build Status](https://travis-ci.org/swissmanu/primus-responder.png)](https://travis-ci.org/swissmanu/primus-responder) [![NPM version](https://badge.fury.io/js/primus-responder.png)](http://badge.fury.io/js/primus-responder)
+
 ## Installation
 
 	$ npm install primus-responder --save
@@ -109,3 +111,13 @@ primus.writeAndWait('request data', function(response) {
 ## Run tests
 
 	$ npm test
+
+## License
+
+Copyright (c) 2013 Manuel Alabor
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
