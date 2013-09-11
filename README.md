@@ -13,6 +13,10 @@ Client and server plugin that adds a request/response cycle to [Primus](https://
 * Wrap existing REST API into a realtime websocket connection
 * Simplify program flow if waiting on a specific response is needed
 
+## Technical overview
+
+* http://alabor.me/magazine/request-response-oriented-websockets/
+
 ## Usage
 
 ### On the server
