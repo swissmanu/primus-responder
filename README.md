@@ -12,10 +12,7 @@ Client and server plugin that adds a request/response cycle to [Primus](https://
 
 * Wrap existing REST API into a realtime websocket connection
 * Simplify program flow if waiting on a specific response is needed
-
-## Technical overview
-
-* http://alabor.me/magazine/request-response-oriented-websockets/
+* 
 
 ## Usage
 
@@ -115,6 +112,12 @@ primus.writeAndWait('request data', function(response) {
 ## Run tests
 
 	$ npm test
+
+## Technical overview
+
+* http://alabor.me/magazine/request-response-oriented-websockets/
+
+![Sequence Diagram](http://www.websequencediagrams.com/cgi-bin/cdraw?lz=dGl0bGUgUHJpbXVzIFJlc3BvbmRlcgoKUmVxdWVzdGVyLT4AFwYAEwlBOiB3cml0ZUFuZFdhaXQoZGF0YSwgcgA2BXNlQ2FsbGJhY2spOwoAKBAANhRTYXZlIGMALQcAECJCOiBTZW5kIHIAgRgGIGVudmVsb3BlAFwQQi0-IgAdByIgRXZlbnQ6IEVtaXQKAAcFIEhhbmRsZXIAEhMAFAYAFxAAdBJkb25lKACBbAhEYXRhAIFeEkIAgVsVAIE4BgCCJgYAgSYZAIIWFU1hcCByZXBzADUFd2l0aCBvcmlnaW5hbACCBwgAgl8TAIM-CTogRXhlY3V0ZQB0CgCCbgkg&s=qsd)
 
 ## License
 
