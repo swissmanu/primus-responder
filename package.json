@@ -1,7 +1,7 @@
 {
   "name": "primus-responder",
-  "version": "1.0.0",
-  "description": "Client and server plugin that adds a request/response cycle to Primus.",
+  "version": "1.0.1",
+  "description": "Request-Response ortiented communication for websockets with Primus.",
   "main": "index.js",
   "scripts": {
     "build": "make build",
@@ -24,13 +24,11 @@
   },
   "devDependencies": {
     "browserbuild": "~0.7.0",
-    "should": "~1.2.2",
     "primus": "~1.4.0",
     "jshint": "~2.1.10",
     "mocha": "~1.12.1",
     "ws": "~0.4.30",
     "debug": "~0.7.2",
-    "expect": "0.0.2",
     "expect.js": "~0.2.0"
   }
 }
