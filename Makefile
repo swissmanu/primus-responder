@@ -2,8 +2,8 @@ lint:
 	@./node_modules/.bin/jshint \
 		lib/
 
-test: build
+test:
 	@./node_modules/.bin/mocha \
 		--reporter spec
 
-.PHONY: build lint test
+.PHONY: lint test

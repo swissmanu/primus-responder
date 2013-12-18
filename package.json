@@ -4,7 +4,6 @@
   "description": "Request-Response ortiented communication for websockets with Primus.",
   "main": "index.js",
   "scripts": {
-    "build": "make build",
     "test": "make test"
   },
   "repository": {
@@ -23,7 +22,6 @@
     "url": "https://github.com/swissmanu/primus-responder/issues"
   },
   "dependencies": {
-    "browserbuild": "~0.7.0",
     "debug": "~0.7.2"
   }
   , "devDependencies": {
