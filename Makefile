@@ -1,21 +1,9 @@
-MAIN = index.js
-GLOBAL = 'var PrimusResponder'
-FILE = build/primus-responder.client.js
-
-build:
-	@[ -d build ] || mkdir build
-	@./node_modules/.bin/browserbuild \
-		--main $(MAIN) \
-		--global $(GLOBAL) \
-		--basepath lib/client/ `find lib/client -name '*.js'` \
-		> $(FILE)
-
 lint:
 	@./node_modules/.bin/jshint \
 		lib/
 
-test: build
+test:
 	@./node_modules/.bin/mocha \
 		--reporter spec
 
-.PHONY: build lint test
+.PHONY: lint test
