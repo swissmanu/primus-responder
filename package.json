@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "debug": "~0.8.1",
-    "node-uuid": "^1.4.1"
+    "node-uuid": "~1.4.1"
   }
   , "devDependencies": {
     "primus": "~2.2.2",
