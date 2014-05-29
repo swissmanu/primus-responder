@@ -26,11 +26,11 @@
     "node-uuid": "~1.4.1"
   }
   , "devDependencies": {
-    "primus": "~2.2.2",
-    "jshint": "~2.1.10",
-    "mocha": "~1.12.1",
+    "primus": "~2.2.4",
+    "jshint": "~2.5.1",
+    "mocha": "~1.19.0",
     "ws": "~0.4.31",
-    "expect.js": "~0.2.0"
+    "expect.js": "~0.3.1"
   },
   "engines": {
     "node": ">=0.10.28"
