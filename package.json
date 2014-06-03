@@ -22,13 +22,17 @@
     "url": "https://github.com/swissmanu/primus-responder/issues"
   },
   "dependencies": {
-    "debug": "~0.7.2"
+    "debug": "~0.8.1",
+    "node-uuid": "~1.4.1"
   }
   , "devDependencies": {
-    "primus": "~1.4.0",
-    "jshint": "~2.1.10",
-    "mocha": "~1.12.1",
-    "ws": "~0.4.30",
-    "expect.js": "~0.2.0"
+    "primus": "~2.2.4",
+    "jshint": "~2.5.1",
+    "mocha": "~1.19.0",
+    "ws": "~0.4.31",
+    "expect.js": "~0.3.1"
+  },
+  "engines": {
+    "node": ">=0.10.28"
   }
 }
