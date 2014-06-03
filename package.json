@@ -1,6 +1,6 @@
 {
   "name": "primus-responder",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Request-Response ortiented communication for websockets with Primus.",
   "main": "index.js",
   "scripts": {

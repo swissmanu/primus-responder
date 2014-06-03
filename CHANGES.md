@@ -1,5 +1,8 @@
 # Changes
 
+## 1.0.3
+* Request id generation with rigorous implementation of RFC4122 UUIDs. thx @mgesmundo.
+
 ## 1.0.2
 * Removed dependency on `browserbuild` by introducing a simple wrapper function around client code. thx @cayasso.
 
