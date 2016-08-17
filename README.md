@@ -37,7 +37,7 @@ primus.on('connection', function(spark) {
 	// Request a response from the spark:
 	spark.writeAndWait('request from server', function(response) {
 		// Write the sparks response to console
-		console.log('Reponse from spark:' + response);
+		console.log('Reponse from spark:', response);
 	});
 
 });
