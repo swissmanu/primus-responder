@@ -23,9 +23,9 @@
   },
   "dependencies": {
     "debug": "~0.8.1",
-    "node-uuid": "~1.4.1"
-  }
-  , "devDependencies": {
+    "uuid": "^3.0.0"
+  },
+  "devDependencies": {
     "primus": "~2.2.4",
     "jshint": "~2.5.1",
     "mocha": "~1.19.0",
