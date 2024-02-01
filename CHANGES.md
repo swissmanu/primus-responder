@@ -1,5 +1,11 @@
 # Changes
 
+## 1.0.5
+* Update `debug`
+
+## 1.0.4
+* Fix compatibility with node-uuid@1.4.7
+
 ## 1.0.3
 * Request id generation with rigorous implementation of RFC4122 UUIDs. thx @mgesmundo.
 

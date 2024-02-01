@@ -1,6 +1,6 @@
 {
   "name": "primus-responder",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Request-Response ortiented communication for websockets with Primus.",
   "main": "index.js",
   "scripts": {
@@ -22,15 +22,15 @@
     "url": "https://github.com/swissmanu/primus-responder/issues"
   },
   "dependencies": {
-    "debug": "~0.8.1",
+    "debug": "^4.3.4",
     "node-uuid": "~1.4.1"
-  }
-  , "devDependencies": {
-    "primus": "~2.2.4",
+  },
+  "devDependencies": {
+    "expect.js": "~0.3.1",
     "jshint": "~2.5.1",
     "mocha": "~1.19.0",
-    "ws": "~0.4.31",
-    "expect.js": "~0.3.1"
+    "primus": "~2.2.4",
+    "ws": "~0.4.31"
   },
   "engines": {
     "node": ">=0.10.28"
